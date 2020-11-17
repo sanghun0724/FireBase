@@ -90,6 +90,9 @@
                                             <constraint firstAttribute="height" constant="40" id="pxl-Nl-pnT"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="OBq-kc-rlV" eventType="touchUpInside" id="sQU-VZ-V7I"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVC-1f-KSU">
                                         <rect key="frame" x="0.0" y="300" width="334" height="20.5"/>
@@ -114,6 +117,14 @@
                             <constraint firstItem="fCp-hO-CAD" firstAttribute="trailing" secondItem="8yP-IL-B54" secondAttribute="trailing" constant="40" id="m7v-WH-MB5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="OBt-Pr-AyD" id="Eqz-qY-jgO"/>
+                        <outlet property="errorLabel" destination="uVC-1f-KSU" id="Jkj-pp-Uoe"/>
+                        <outlet property="firstNameTextField" destination="tKZ-Jr-DWJ" id="8hl-nq-iXn"/>
+                        <outlet property="lastNameTextField" destination="Wfk-lr-QDJ" id="LvR-cY-MSw"/>
+                        <outlet property="passwordTextField" destination="Wca-f3-Zha" id="Kdp-Ny-Yzs"/>
+                        <outlet property="signupButton" destination="rAY-WM-OGh" id="cGw-NN-rRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thU-6d-FET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,6 +174,9 @@
                                             <constraint firstAttribute="height" constant="40" id="ZLh-DL-JPg"/>
                                         </constraints>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="lhd-BN-M4G" eventType="touchUpInside" id="4bE-4T-1QI"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-J2-arR">
                                         <rect key="frame" x="0.0" y="180" width="334" height="20.5"/>
@@ -185,6 +199,12 @@
                             <constraint firstItem="GhJ-7t-6GP" firstAttribute="leading" secondItem="b3z-5L-vAX" secondAttribute="leading" constant="40" id="rsb-Hw-xdx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="CpQ-86-8ew" id="7cf-Ja-5OA"/>
+                        <outlet property="errorLabel" destination="hlv-J2-arR" id="Obj-gD-x7V"/>
+                        <outlet property="loginButton" destination="glk-z8-akB" id="chf-MU-Lxn"/>
+                        <outlet property="passwordTextField" destination="Dn3-dh-O35" id="wJA-ab-7dJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeP-sd-XDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
